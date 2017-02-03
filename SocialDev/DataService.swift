@@ -34,6 +34,4 @@ class DataService {
     func createFirDBUser(uid: String, userData: Dictionary<String, String>) {
         REF_USERS.child(uid).updateChildValues(userData)
     }
-    
-    
 }

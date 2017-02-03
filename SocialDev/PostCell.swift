@@ -20,6 +20,14 @@ class PostCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func updateUI(post: Post) {
+        caption.text = post.caption
+        likesLbl.text = String(post.likes)
+        //let imageData = try Data(contentsOf: URL(string: post.imageURL)!)
+        
+        //postImg.image = UIImage(data: imageData)
+    }
 
     
 }
