@@ -16,14 +16,17 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var caption: UITextView!
     @IBOutlet weak var likesLbl: UILabel!
 
+    var post: Post!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
-    func updateUI(post: Post) {
-        caption.text = post.caption
-        likesLbl.text = String(post.likes)
+    func configureCell(post: Post) {
+        self.post = post
+        self.caption.text = post.caption
+        self.likesLbl.text = "\(post.likes)"
         //let imageData = try Data(contentsOf: URL(string: post.imageURL)!)
         
         //postImg.image = UIImage(data: imageData)

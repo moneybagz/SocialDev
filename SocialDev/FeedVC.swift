@@ -48,15 +48,15 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
         
         let post = posts[indexPath.row]
         
-        cell.updateUI(post: post)
-        
-        print("CLYFF: \(post.caption)")
-        
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
+            cell.configureCell(post: post)
+            return cell
+        } else {
+            return PostCell()
+        }
     }
 
     @IBAction func signOutTapped(_ sender: AnyObject) {
