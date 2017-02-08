@@ -94,7 +94,19 @@ class SignInVC: UIViewController {
     func completeSignIn(id: String, userData: Dictionary<String, String>) {
         DataService.ds.createFirDBUser(uid: id, userData: userData)
         KeychainWrapper.standard.set(id, forKey: KEY_UID)
-        performSegue(withIdentifier: GO_TO_FEED, sender: nil)
+        
+        
+        // GIVE USERNAME SEGUE IF NEW USER
+        FIRDatabase.database().reference().child("users/\(FIRAuth.auth()!.currentUser!.uid)/username").observeSingleEvent(of: .value, with: {(snap) in
+            
+            if snap.exists(){
+                //Your user already has a username
+                self.performSegue(withIdentifier: GO_TO_FEED, sender: nil)
+            }else{
+                //You need to set the user's name and the the required segue
+                self.performSegue(withIdentifier: "UserNameVC", sender: nil)
+            }
+        })
     }
 }
 

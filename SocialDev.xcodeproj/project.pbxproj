@@ -13,6 +13,7 @@
 		539F1B731E3EF3A400A03B56 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539F1B721E3EF3A400A03B56 /* PostCell.swift */; };
 		539F1B761E43F8CF00A03B56 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539F1B751E43F8CF00A03B56 /* DataService.swift */; };
 		539F1B781E441C8A00A03B56 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539F1B771E441C8A00A03B56 /* Post.swift */; };
+		539F1B7A1E48178900A03B56 /* UserNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539F1B791E48178900A03B56 /* UserNameVC.swift */; };
 		53B3AA841E3AB7BC00EBC6B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B3AA831E3AB7BC00EBC6B1 /* AppDelegate.swift */; };
 		53B3AA861E3AB7BC00EBC6B1 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B3AA851E3AB7BC00EBC6B1 /* SignInVC.swift */; };
 		53B3AA891E3AB7BC00EBC6B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B3AA871E3AB7BC00EBC6B1 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		539F1B721E3EF3A400A03B56 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		539F1B751E43F8CF00A03B56 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		539F1B771E441C8A00A03B56 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		539F1B791E48178900A03B56 /* UserNameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNameVC.swift; sourceTree = "<group>"; };
 		53B3AA801E3AB7BC00EBC6B1 /* SocialDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B3AA831E3AB7BC00EBC6B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53B3AA851E3AB7BC00EBC6B1 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				53B3AA851E3AB7BC00EBC6B1 /* SignInVC.swift */,
+				539F1B791E48178900A03B56 /* UserNameVC.swift */,
 				539F1B6E1E3EAB7B00A03B56 /* FeedVC.swift */,
 			);
 			name = Controller;
@@ -305,6 +308,7 @@
 				53B3AA9E1E3AD1AA00EBC6B1 /* Constants.swift in Sources */,
 				53B3AAA41E3AD95100EBC6B1 /* FancyBtn.swift in Sources */,
 				539F1B731E3EF3A400A03B56 /* PostCell.swift in Sources */,
+				539F1B7A1E48178900A03B56 /* UserNameVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
